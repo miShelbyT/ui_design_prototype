@@ -13,7 +13,7 @@
 body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 0.75fr) repeat(2, 4fr) 40px;
+  grid-template-rows: repeat(2, 0.5fr) repeat(2, 4fr) 40px;
   grid-column-gap: 0px;
   /* grid-row-gap: 5px; */
   box-sizing: border-box;
@@ -52,18 +52,21 @@ nav {
   align-items: center;
 }
 
-ul {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-nav li, .cta_btn {
+nav li {
   margin: 0 5px;
   padding: 10px 25px;
+}
+
+nav li, .cta_btn {
   border-radius: 9px 0;
   border: 2px solid var(--midnightblue);
-  background-color: aliceblue;
+  background-color: var(--offwhite);
   font-size: 14px;
   font-family: "Faculty Glyphic", sans-serif;
   font-weight: 400;
@@ -71,27 +74,21 @@ nav li, .cta_btn {
   cursor: pointer;
 }
 
-nav li:hover {
+nav li:hover, .cta_btn:hover {
   transform: scale(0.9);
 }
 
-.cta_btn:hover {
-  transform: scale(0.9);
-}
 
-nav a {
+nav a, .cta_btn a {
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 #btn_group {
   display: flex;
 }
 
-#btn_group li {
-  background-color: var(--offwhite);
-}
-
-#btn_group a {
+#btn_group a, .cta_btn a {
   color: var(--midnightblue);
 }
 
@@ -109,7 +106,7 @@ nav a {
   border: 1px solid var(--midnightblue);
 }
 
-#contact_btn {
+#contact_btn, footer, .cta {
   background-color: var(--midnightblue);
 }
 
@@ -117,12 +114,18 @@ nav a {
 main {
   grid-area: 3 / 1 / 5 / 6;
   background-color: var(--offwhite);
+}
+
+main p {
   text-align: justify;
+}
+
+main > div {
+  padding: 35px;
 }
 
 .outer {
   display: grid;
-  padding: 40px;
 }
 
 .inner_text {
@@ -154,7 +157,7 @@ main {
   float: left;
 }
 
-main p {
+main p, .adoption_content {
   font-size: 20px;
   line-height: 35px;
   text-align: justify;
@@ -164,16 +167,38 @@ main p {
 
 .cta {
   clear: both;
-  background-color: var(--midnightblue);
   color: var(--offwhite);
-  padding: 45px 55px;
-  margin: 55px 0;
+  display: flex;
+  align-items: center;
+}
+
+.cta, .adoption_content {
+  margin: 0;
+}
+
+.cta_btn {
+  display: inline-block;
+  padding: 15px;
+  width: 340px;
+  text-align: center;
+}
+
+.cta p {
+  padding: 35px;
+}
+
+.adoption_content {
+  background-color: var(--bluesky);
+  color: var(--offwhite);
+}
+
+.adoption_content a {
+  color: var(--midnightblue);
 }
 
 
 footer {
   grid-area: 5 / 1 / 6 / 6;
-  background-color: var(--midnightblue);
   display: flex;
   align-items: center;
   justify-content: center;
