@@ -52,6 +52,12 @@ nav {
   align-items: center;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 nav li, .cta_btn {
   margin: 0 5px;
   padding: 10px 25px;
@@ -62,7 +68,7 @@ nav li, .cta_btn {
   font-family: "Faculty Glyphic", sans-serif;
   font-weight: 400;
   font-style: normal;
-  list-style-type: none;
+  cursor: pointer;
 }
 
 nav li:hover {
@@ -73,7 +79,7 @@ nav li:hover {
   transform: scale(0.9);
 }
 
-nav li a {
+nav a {
   text-decoration: none;
 }
 
@@ -85,9 +91,16 @@ nav li a {
   background-color: var(--offwhite);
 }
 
+#btn_group a {
+  color: var(--midnightblue);
+}
+
 #btn_group li.active {
   background-color: var(--bluesky);
-  color: var(--silver);
+}
+
+#btn_group li.active a, #contact_btn a {
+  color: var(--offwhite);
 }
 
 #btn_group li:hover {
@@ -97,7 +110,7 @@ nav li a {
 }
 
 #contact_btn {
-  background-color: var(--bluesky);
+  background-color: var(--midnightblue);
 }
 
 
