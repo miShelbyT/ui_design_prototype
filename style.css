@@ -18,6 +18,7 @@ body {
   /* grid-row-gap: 5px; */
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -104,42 +105,56 @@ main {
   grid-area: 3 / 1 / 5 / 6;
   background-color: var(--offwhite);
   text-align: justify;
+}
+
+.outer {
+  display: grid;
   padding: 40px;
 }
 
-.intro_img, .intro_img2 {
+.inner_text {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.inner_text p {
+  margin: 0;
+  color: var(--midnightblue);
+}
+
+.inner_text span {
+  font-style: italic;
+}
+
+.homepage_img, .homepage_img {
   width: 25%;
   border-radius: 10px;
   margin: 0 2rem;
 }
 
-.intro_img {
+.homepage_img {
   float: right;
 }
 
-.intro_img2 {
+.homepage_img2 {
   float: left;
 }
 
-.intro_text {
+main p {
   font-size: 20px;
   line-height: 35px;
-  color: var(--midnightblue);
-}
-.intro_text span {
-  font-style: italic;
+  text-align: justify;
+  
 }
 
-.intro_addl {
-  text-align: justify;
-}
 
 .cta {
   clear: both;
   background-color: var(--midnightblue);
   color: var(--offwhite);
-  padding: 25px;
-  margin: 55px;
+  padding: 45px 55px;
+  margin: 55px 0;
 }
 
 
