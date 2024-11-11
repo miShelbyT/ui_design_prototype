@@ -13,7 +13,7 @@
 body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 96px) repeat(2, 4fr) 40px;
+  grid-template-rows: 145px 95px repeat(2, 4fr) 40px;
   grid-column-gap: 0px;
   /* grid-row-gap: 5px; */
   box-sizing: border-box;
@@ -27,17 +27,37 @@ body {
 header {
   grid-area: 1 / 1 / 2 / 6;
   background-color: var(--silver);
+  
+}
+
+.logos {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 header img {
-  height: 60px;
   margin: 15px;
+}
+
+.balloon_animal_logo {
+  position: relative;
+  top: 50%;
+  height: 80px;
 }
 
 #logo_2 {
   width: 15%;
+  height: 80px;
+}
+
+.slogan {
+  text-align: right;
+  margin: 0 15px 0 0;
+  font-family: "Vujahday Script", cursive;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 22px;
 }
 
 header, nav {
