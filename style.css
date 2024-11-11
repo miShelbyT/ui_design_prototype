@@ -133,13 +133,25 @@ main > div {
   color: var(--midnightblue);
 }
 
+.animal_main a {
+  color: black;
+}
+
 h1 {
   color: var(--midnightblue);
   font-family: "Vujahday Script", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 36px;
+  font-size: 40px;
   margin: 0;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .separator {
@@ -179,7 +191,7 @@ h1 {
   float: left;
 }
 
-main p, .adoption_content {
+main p, .adoption_content, .animal_main {
   font-size: 20px;
   line-height: 35px;
   text-align: justify;
