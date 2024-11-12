@@ -30,7 +30,73 @@
       </ul>
       <button class="contact_btn" disabled>Contact Us</button>
     </nav>
-    <main>FORM GOES HERE</main>
+    <main class="contact_form">
+      <h1>Please Fill Out This Form:</h1>
+      <h2>One of Our Pexperts Will Contact You As Soon As Possible</h2>
+      <h5>All Fields Are Required</h5>
+      <div class="form">
+        <form id="form">
+          <fieldset>
+            <legend>About You</legend>
+            <div class="mb">
+              <label for="name">*Name: </label>
+              <input type="text" name="name" id="name" required />
+            </div>
+            
+            <div class="mb">
+              <label for="phone">*Phone number: </label>
+              <input type="text" name="phone" id="phone" required />
+            </div>
+            
+            <div class="mb">
+              <label for="email">*Email: </label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            
+            <div>
+              <label for="timezone">*Time Zone: </label>
+              <select name="timezone" id="timezone" required>
+                <option value="">Please Select A Timezone (US and Canada only)</option>
+                <option value="-10:00">(GMT -10:00) Hawaii</option>
+                <option value="-09:00">(GMT -9:00) Alaska</option>
+                <option value="-08:00">(GMT -8:00) Pacific Time (US &amp; Canada)</option>
+                <option value="-07:00">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+                <option value="-06:00">(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
+                <option value="-05:00">(GMT -5:00) Eastern Time (US &amp; Canada)</option>
+                <option value="-04:00">(GMT -4:00) Atlantic Time (Canada)</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>About Your Pet</legend>
+            <div class="mb">
+              <label for="name">*Name: </label>
+              <input type="text" name="name" id="name" required />
+            </div>
+            
+            <div class="mb">
+              <label for="type">*Type: </label>
+              <input type="text" name="type" id="type" required />
+            </div>
+            
+            <div>
+              <label for="age">*Age (in Years): </label>
+              <input type="number" name="age" id="age" min="0" required />
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Would You Like To Opt In To Our Mailing List?</legend>
+            <input type="checkbox" id="checkbox" name="checkbox" value="yes">
+            <label for="checkbox"> Yes I Would!</label>
+          </fieldset>
+          <div>
+            <input type="submit" value="Submit Form" />
+            <input type="reset" value="Reset Form">
+          </div>
+        </form>
+      </div>
+      
+    </main>
     <footer>©Paradigm Pet Professionals</footer>
   </body>
 </html>
