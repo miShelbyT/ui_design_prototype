@@ -82,12 +82,12 @@ nav ul {
   padding: 0;
 }
 
-nav li, .contact_btn {
+nav li, #contact_btn {
   margin: 0 5px;
   padding: 10px 25px;
 }
 
-nav li, .cta_btn, .contact_btn {
+nav li, .cta_btn, #contact_btn {
   border-radius: 9px 0;
   border: 2px solid var(--midnightblue);
   background-color: var(--offwhite);
@@ -98,10 +98,15 @@ nav li, .cta_btn, .contact_btn {
   cursor: pointer;
 }
 
-.contact_btn:disabled {
-  background-color: var(--silver);
+#contact_btn {
   color: var(--offwhite);
+  text-transform: uppercase;
+}
+
+#contact_btn:disabled {
+  background-color: var(--silver);
   cursor: not-allowed;
+  
 }
 
 nav li:hover,
@@ -159,11 +164,10 @@ main p {
 }
 
 main > div, .contact_form, fieldset {
-  padding: 35px;
+  padding: 2rem 5rem;
 }
 
 .animal_main {
-  padding: 70px;
   color: var(--midnightblue);
 }
 
@@ -196,36 +200,37 @@ h2 {
   display: grid;
 }
 
-.inner_text {
+.outer img {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  
+}
+
+.inner_text {
   color: var(--midnightblue);
 }
 
 .inner_text p {
   margin: 0;
-  padding: 0 35px;
 }
 
 .inner_text span {
   font-style: italic;
 }
 
-.homepage_img,
-.homepage_img {
-  width: 25%;
+.homepage_img, .homepage_img2 {
+  width: 300px;
   border-radius: 10px;
-  margin: 0 2rem;
 }
 
-.homepage_img {
+.homepage_img, .animal_page {
   float: right;
+  margin-left: 40px;
 }
 
 .homepage_img2 {
   float: left;
+  margin-right: 40px;
 }
 
 main p,
@@ -268,6 +273,16 @@ main p,
 
 .adoption_content a {
   color: var(--midnightblue);
+}
+
+/* end landing page styles */
+
+/* animal page styles */
+
+.animal_page {
+  border-radius: 50%;
+  shape-outside: circle(64.03%);
+  width: 400px;
 }
 
 .contact_form {
