@@ -200,11 +200,13 @@ h2 {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  
+  color: var(--midnightblue);
 }
 
 .inner_text p {
   margin: 0;
-  color: var(--midnightblue);
+  padding: 0 35px;
 }
 
 .inner_text span {
