@@ -110,8 +110,10 @@ nav li, .cta_btn, #contact_btn {
 }
 
 nav li:hover,
-.cta_btn:hover {
+.cta_btn:hover,
+input[type=submit]:hover, input[type=reset]:hover {
   transform: scale(0.9);
+  
 }
 
 
@@ -167,8 +169,14 @@ main > div, .contact_form, fieldset {
   padding: 2rem 5rem;
 }
 
+.animal_title {
+  padding: 0 5rem;
+  margin-bottom: 0;
+}
+
 .animal_main {
   color: var(--midnightblue);
+  padding-top: 0;
 }
 
 .animal_main a {
@@ -194,44 +202,56 @@ h2 {
 
 .separator {
   text-align: center;
+  line-height: 60px;
 }
+
+.outer, .cta {
+  display: flex;
+  align-items: center;
+}
+
 
 .outer {
-  display: grid;
-}
-
-.outer img {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.inner_text {
   color: var(--midnightblue);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-.inner_text p {
-  margin: 0;
+.intro {
+  padding-top: 0;
 }
+
+.inner_text a {
+  color: black;
+}
+
 
 .inner_text span {
   font-style: italic;
 }
 
-.homepage_img, .homepage_img2 {
-  width: 300px;
+.homepage_img, .homepage_img2, .animal_page {
   border-radius: 10px;
 }
 
+/* images are on the right */
 .homepage_img, .animal_page {
-  float: right;
   margin-left: 40px;
 }
 
+/* image is on the left */
 .homepage_img2 {
-  float: left;
   margin-right: 40px;
 }
+
+.homepage_img {
+  height: 450px;
+}
+
+.homepage_img2 {
+  height: 325px;
+}
+
 
 main p,
 .adoption_content,
@@ -239,15 +259,11 @@ main p,
   font-size: 20px;
   line-height: 35px;
   text-align: justify;
-
 }
 
 
 .cta {
-  clear: both;
   color: var(--offwhite);
-  display: flex;
-  align-items: center;
 }
 
 .cta,
@@ -260,10 +276,7 @@ main p,
   padding: 15px;
   width: 340px;
   text-align: center;
-}
-
-.cta p {
-  padding: 35px;
+  margin-right: 25px;
 }
 
 .adoption_content {
@@ -280,9 +293,8 @@ main p,
 /* animal page styles */
 
 .animal_page {
-  border-radius: 50%;
-  shape-outside: circle(64.03%);
-  width: 400px;
+  width: 450px;
+  border-radius: 10px;
 }
 
 .contact_form {
@@ -298,7 +310,8 @@ main p,
 }
 
 .form label {
-  width: 70px;
+  display: inline-block;
+  width: 125px;
 }
 
 fieldset, input[type=submit], input[type=reset] {
@@ -318,7 +331,9 @@ fieldset legend {
   left: 2%;
 }
 
-input, select {
+input[type=text], input[type=number], input[type=email], select {
+  height: 25px;
+  width: 245px;
   border: 1px solid var(--dimgray);
   box-shadow: 3px 3px 5px grey;
   background-color: var(--offwhite);
@@ -327,6 +342,7 @@ input, select {
 input[type=submit], input[type=reset] {
   padding: 7px 10px;
   margin-top: 8px;
+  cursor: pointer;
 }
 
 input[type=submit] {
