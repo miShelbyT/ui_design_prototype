@@ -14,7 +14,7 @@
 body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 145px 95px repeat(2, 4fr) 40px;
+  grid-template-rows: 155px 95px repeat(2, 4fr) 40px;
   grid-column-gap: 0px;
   /* grid-row-gap: 5px; */
   box-sizing: border-box;
@@ -42,9 +42,7 @@ header img {
 }
 
 .balloon_animal_logo {
-  position: relative;
-  top: 50%;
-  height: 80px;
+  height: 90px;
 }
 
 #logo_2 {
@@ -82,9 +80,10 @@ nav ul {
   padding: 0;
 }
 
-nav li, #contact_btn {
+nav li, #contact_btn, .cta_btn {
   margin: 0 5px;
   padding: 10px 25px;
+  letter-spacing: 1px;
 }
 
 nav li, .cta_btn, #contact_btn {
