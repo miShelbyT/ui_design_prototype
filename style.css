@@ -28,6 +28,7 @@ body {
 header {
   grid-area: 1 / 1 / 2 / 6;
   background-color: var(--silver);
+  background-image: linear-gradient(0deg, var(--silver), var(--bluesky));
 
 }
 
@@ -42,15 +43,17 @@ header img {
 }
 
 .balloon_animal_logo {
-  height: 90px;
+  height: 115px;
 }
 
+
 #logo_2 {
-  width: 15%;
+  float: right;
   height: 80px;
 }
 
 .slogan {
+  clear: both;
   text-align: right;
   margin: 0 15px 0 0;
   font-family: "Vujahday Script", cursive;
