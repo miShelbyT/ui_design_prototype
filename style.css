@@ -14,7 +14,7 @@
 body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 155px 95px repeat(2, 4fr) 40px;
+  grid-template-rows: 155px 65px repeat(2, 4fr) 40px;
   grid-column-gap: 0px;
   /* grid-row-gap: 5px; */
   box-sizing: border-box;
@@ -88,7 +88,7 @@ nav li, #contact_btn, .cta_btn {
   letter-spacing: 1px;
 }
 
-nav li, .cta_btn, #contact_btn {
+.cta_btn, #contact_btn {
   border-radius: 9px 0;
   border: 2px solid var(--midnightblue);
   background-color: var(--offwhite);
@@ -108,6 +108,10 @@ nav li, .cta_btn, #contact_btn {
   background-color: var(--silver);
   cursor: not-allowed;
   
+}
+
+nav li.active, nav li:hover {
+  border-radius: 9px 0;
 }
 
 nav li:hover,
