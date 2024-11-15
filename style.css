@@ -85,13 +85,13 @@ nav ul {
   padding: 0;
 }
 
-nav li, #contact_btn, .cta_btn {
+nav li, #contact_btn, #hidden_btn, .cta_btn {
   margin: 0 5px;
   padding: 10px 25px;
   letter-spacing: 1px;
 }
 
-.cta_btn, #contact_btn {
+.cta_btn, #contact_btn, #hidden_btn {
   border-radius: 9px 0;
   border: 2px solid var(--midnightblue);
   background-color: var(--offwhite);
@@ -102,12 +102,12 @@ nav li, #contact_btn, .cta_btn {
   cursor: pointer;
 }
 
-#contact_btn {
+#contact_btn, #hidden_btn {
   color: var(--offwhite);
   text-transform: uppercase;
 }
 
-#contact_btn:disabled {
+#contact_btn:disabled, #hidden_btn:disabled {
   background-color: var(--silver);
   cursor: not-allowed;
   
@@ -145,7 +145,7 @@ nav a,
 }
 
 #btn_group li.active a,
-#contact_btn a {
+#contact_btn a, #hidden_btn a {
   color: var(--offwhite);
 }
 
@@ -155,7 +155,7 @@ nav a,
   border: 1px solid var(--midnightblue);
 }
 
-#contact_btn,
+#contact_btn, #hidden_btn,
 footer,
 .cta {
   background-color: var(--midnightblue);
@@ -177,7 +177,7 @@ main > div, .contact_form, fieldset {
   padding: 2rem 5rem;
 }
 
-.animal_title {
+h1 {
   padding: 0 5rem;
   margin-bottom: 0;
 }
@@ -213,13 +213,13 @@ h2 {
   line-height: 60px;
 }
 
-.outer, .cta {
+.intro, .cta {
   display: flex;
   align-items: center;
 }
 
 
-.outer {
+.intro {
   color: var(--midnightblue);
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -240,6 +240,10 @@ h2 {
 
 .homepage_img, .homepage_img2, .animal_page {
   border-radius: 10px;
+}
+
+.hidden, #hidden_btn {
+  display: none;
 }
 
 /* images are on the right */
@@ -372,4 +376,40 @@ footer {
   align-items: center;
   justify-content: center;
   color: var(--offwhite);
+}
+
+/* media queries */
+
+
+
+@media only screen and (max-width: 750px) {
+  
+  .intro {
+    flex-direction: column;
+  }
+
+  h1 {
+    text-align: center;
+  }
+  .homepage_img, #contact_btn {
+    display: none;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  #hidden_btn {
+    display: flex;
+  }
+
+  .animal_page, .hidden, .homepage_img2 {
+    order: 1;
+    width: 100%;
+    margin: 2rem 0;
+  }
+
+  .inner_text {
+    order: 2;
+  }
 }
