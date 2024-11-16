@@ -85,9 +85,17 @@ nav ul {
   padding: 0;
 }
 
-nav li, #contact_btn, #hidden_btn, .cta_btn {
-  margin: 0 5px;
-  padding: 10px 25px;
+nav li {
+  margin: 0 7px;
+}
+
+
+nav li a, button#contact_btn, #contact_btn a, .cta_btn a {
+  display: block;
+}
+
+button#hidden_btn, #hidden_btn a, nav li a, button#contact_btn, #contact_btn a, .cta_btn a {
+  padding: 10px 30px;
   letter-spacing: 1px;
 }
 
@@ -117,10 +125,9 @@ nav li.active, nav li:hover {
   border-radius: 9px 0;
 }
 
-nav li:hover,
-.cta_btn:hover,
+.cta_btn a:hover,
 input[type=submit]:hover, input[type=reset]:hover {
-  transform: scale(0.9);
+  transform: scale(1.1);
   
 }
 
@@ -323,7 +330,7 @@ main p,
 
 .form label {
   display: inline-block;
-  width: 125px;
+  width: 25%;
 }
 
 fieldset, input[type=submit], input[type=reset] {
@@ -383,6 +390,10 @@ footer {
 
 
 @media only screen and (max-width: 750px) {
+
+  #btn_group a {
+    padding: 10px 15px;
+  }
   
   .intro {
     flex-direction: column;
@@ -391,7 +402,7 @@ footer {
   h1 {
     text-align: center;
   }
-  .homepage_img, #contact_btn {
+  .homepage_img, button#contact_btn, li#contact_btn {
     display: none;
   }
 
