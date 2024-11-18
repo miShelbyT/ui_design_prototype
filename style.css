@@ -246,7 +246,7 @@ h2 {
 }
 
 .homepage_img, .homepage_img2, .animal_page {
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .hidden, #hidden_btn {
@@ -312,7 +312,6 @@ main p,
 
 .animal_page {
   width: 450px;
-  border-radius: 10px;
 }
 
 .contact_form {
